@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumsto · Claridad para gestionar</title>
+<meta name="description" content="Lumsto junta en un solo lugar los números de tu desarrolladora inmobiliaria: ventas, cobranza, costos de obra y posesiones. Para la gerencia.">
+<meta property="og:title" content="Lumsto · Claridad para gestionar">
+<meta property="og:description" content="Los números de tu desarrolladora, en un mismo lugar.">
+<meta property="og:image" content="https://lumsto.com/marca/icono-512.png">
+<meta name="theme-color" content="#343536">
+<link rel="icon" type="image/png" href="marca/icono-192.png">
+<link rel="apple-touch-icon" href="marca/icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --grafito: #343536;
+    --ambar: #E8AA38;
+    --blanco: #FFFFFF;
+    --marfil: #F7F5F0;
+    --gris: #E7E5E0;
+    --radio: 12px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--grafito);
+    background: var(--blanco);
+  }
+  a { color: inherit; }
+  .contenedor { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .contenedor { padding: 0 32px; } }
+
+  /* Encabezado y portada en grafito */
+  .portada { background: var(--grafito); color: var(--blanco); }
+  .barra { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; gap: 16px; }
+  .barra img { width: 180px; height: auto; display: block; margin-left: -8px; }
+  .boton {
+    display: inline-block; text-decoration: none; font-weight: 700;
+    padding: 12px 24px; border-radius: var(--radio);
+    background: var(--ambar); color: var(--grafito);
+  }
+  .boton-borde { background: transparent; color: var(--blanco); border: 1px solid rgba(255,255,255,.4); padding: 8px 16px; }
+  .boton-borde:hover { border-color: var(--blanco); }
+  .barra .boton-borde { display: none; }
+  @media (min-width: 560px) { .barra .boton-borde { display: inline-block; } }
+
+  .hero { padding: 48px 0 80px; max-width: 720px; }
+  .acento { width: 48px; height: 4px; background: var(--ambar); border-radius: 2px; margin-bottom: 24px; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 24px; }
+  @media (min-width: 720px) { h1 { font-size: 40px; } .hero { padding: 64px 0 96px; } }
+  .hero p { font-size: 18px; margin: 0 0 32px; opacity: .92; }
+
+  section { padding: 64px 0; }
+  h2 { font-size: 24px; line-height: 1.25; margin: 0 0 8px; }
+  @media (min-width: 720px) { h2 { font-size: 32px; } section { padding: 80px 0; } }
+  .bajada { margin: 0 0 32px; max-width: 640px; }
+
+  .grilla { display: grid; gap: 24px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .grilla { grid-template-columns: 1fr 1fr; } }
+  .tarjeta { background: var(--marfil); border-radius: var(--radio); padding: 24px; }
+  .tarjeta h3 { font-size: 18px; margin: 0 0 8px; }
+  .tarjeta h3::after { content: ""; display: block; width: 32px; height: 3px; background: var(--ambar); border-radius: 2px; margin-top: 8px; }
+  .tarjeta p { margin: 0; }
+
+  .fondo-marfil { background: var(--marfil); }
+  .lista { list-style: none; margin: 0; padding: 0; max-width: 760px; }
+  .lista li { padding: 16px 0; border-top: 1px solid var(--gris); }
+  .lista li:last-child { border-bottom: 1px solid var(--gris); }
+  .lista strong { display: block; }
+
+  .cierre { background: var(--grafito); color: var(--blanco); }
+  .cierre p { max-width: 640px; margin: 0 0 32px; }
+
+  footer { background: var(--grafito); color: var(--blanco); border-top: 1px solid rgba(255,255,255,.12); padding: 24px 0; font-size: 14px; }
+  footer .contenedor { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  footer a { text-decoration: none; opacity: .85; }
+  footer a:hover { opacity: 1; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="portada">
+  <div class="contenedor">
+    <nav class="barra">
+      <img src="marca/logo-inverso.svg" alt="Lumsto" width="180" height="68">
+      <a class="boton boton-borde" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Contacto</a>
+    </nav>
+    <div class="hero">
+      <div class="acento"></div>
+      <h1>Los números de tu desarrolladora, en un mismo lugar.</h1>
+      <p>Lumsto junta ventas, cobranza, costos de obra y posesiones para que la gerencia vea cómo viene cada obra sin esperar el Excel de fin de mes.</p>
+      <a class="boton" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Escribinos</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="contenedor">
+      <h2>De lo general al detalle.</h2>
+      <p class="bajada">Empezás por la desarrolladora, entrás a una obra y llegás a cada unidad. Siempre con los mismos números.</p>
+      <div class="grilla">
+        <div class="tarjeta">
+          <h3>Ventas</h3>
+          <p>Cuánto se vendió, cuánto queda disponible y a qué valor por metro cuadrado, obra por obra.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Cobranza</h3>
+          <p>Lo cobrado, el saldo y las cuotas atrasadas, sin armar una planilla aparte.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Costos de obra</h3>
+          <p>Presupuesto, gastado, lo que falta gastar y el desvío, separando lo que es gestión de lo que es inflación de la construcción.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Posesiones</h3>
+          <p>Qué unidades tienen fecha, cuáles están listas para entregar y cuáles ya se entregaron.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fondo-marfil">
+    <div class="contenedor">
+      <h2>Trabaja con lo que ya usás.</h2>
+      <p class="bajada">Lumsto no reemplaza tu sistema de ventas ni tu sistema contable: los lee.</p>
+      <ul class="lista">
+        <li><strong>Se conecta a tus planillas y sistemas.</strong> Lee la información donde ya está, en modo solo lectura.</li>
+        <li><strong>Tus datos quedan con vos.</strong> La información del negocio sigue en tus sistemas y en tu nube. Lumsto guarda lo mínimo para funcionar.</li>
+        <li><strong>Cada persona ve lo que le corresponde.</strong> Permisos por persona y por obra, e ingreso con verificación.</li>
+        <li><strong>En la computadora y en el celular.</strong> Para consultar un número en una reunión o en la obra.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="contenedor">
+      <div class="acento"></div>
+      <h2>Estamos armando la primera versión.</h2>
+      <p>La estamos construyendo junto a desarrolladoras que quieren dejar de perseguir números. Si querés verla o sumarte a la prueba, escribinos.</p>
+      <a class="boton" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">soporte@lumsto.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Lumsto</span>
+    <a href="mailto:soporte@lumsto.com">soporte@lumsto.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
