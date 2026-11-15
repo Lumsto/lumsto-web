@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lumsto · Claridad para gestionar</title>
-<meta name="description" content="Lumsto junta en un solo lugar los números de tu desarrolladora inmobiliaria: ventas, cobranza, costos de obra y posesiones. Para la gerencia.">
+<meta name="description" content="Lumsto junta en un mismo lugar la información y los números de tu empresa, de lo general al detalle. Para quienes tienen que decidir.">
 <meta property="og:title" content="Lumsto · Claridad para gestionar">
-<meta property="og:description" content="Los números de tu desarrolladora, en un mismo lugar.">
+<meta property="og:description" content="Toda tu información, en un mismo lugar.">
 <meta property="og:image" content="https://lumsto.com/marca/icono-512.png">
 <meta name="theme-color" content="#343536">
 <link rel="icon" type="image/png" href="marca/icono-192.png">
@@ -84,6 +84,7 @@
   footer .contenedor { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
   footer a { text-decoration: none; opacity: .85; }
   footer a:hover { opacity: 1; text-decoration: underline; }
+  .inactivo, .inactivo:hover { cursor: default; border-color: rgba(255,255,255,.4); }
 </style>
 </head>
 <body>
@@ -94,13 +95,14 @@
       <img src="marca/logo-inverso.svg" alt="Lumsto" width="180" height="68">
       <div class="acciones">
         <a class="enlace-contacto" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Contacto</a>
-        <a class="boton boton-borde" href="https://login.lumsto.app">Login</a>
+        <!-- Login desactivado hasta que la app esté lista. Para activarlo: cambiar el span por <a class="boton boton-borde" href="https://login.lumsto.app">Login</a> -->
+        <span class="boton boton-borde inactivo" aria-disabled="true">Login</span>
       </div>
     </nav>
     <div class="hero">
       <div class="acento"></div>
-      <h1>Los números de tu desarrolladora, en un mismo lugar.</h1>
-      <p>Lumsto junta ventas, cobranza, costos de obra y posesiones para que la gerencia vea cómo viene cada obra sin esperar el Excel de fin de mes.</p>
+      <h1>Toda tu información, en un mismo lugar.</h1>
+      <p>Lumsto junta los números de tu empresa que hoy están repartidos en planillas y sistemas, para que veas cómo viene el negocio sin esperar el informe de fin de mes.</p>
       <a class="boton" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Escribinos</a>
     </div>
   </div>
@@ -110,23 +112,23 @@
   <section>
     <div class="contenedor">
       <h2>De lo general al detalle.</h2>
-      <p class="bajada">Empezás por la desarrolladora, entrás a una obra y llegás a cada unidad. Siempre con los mismos números.</p>
+      <p class="bajada">Empezás por la empresa, entrás a cada proyecto o área y llegás al último dato. Siempre con los mismos números.</p>
       <div class="grilla">
         <div class="tarjeta">
-          <h3>Ventas</h3>
-          <p>Cuánto se vendió, cuánto queda disponible y a qué valor por metro cuadrado, obra por obra.</p>
+          <h3>Lo importante, a la vista</h3>
+          <p>Los números que mirás todos los días, juntos en una sola pantalla y siempre actualizados.</p>
         </div>
         <div class="tarjeta">
-          <h3>Cobranza</h3>
-          <p>Lo cobrado, el saldo y las cuotas atrasadas, sin armar una planilla aparte.</p>
+          <h3>Del total al detalle</h3>
+          <p>De un vistazo general a cada registro, sin abrir otra planilla ni pedirle el dato a nadie.</p>
         </div>
         <div class="tarjeta">
-          <h3>Costos de obra</h3>
-          <p>Presupuesto, gastado, lo que falta gastar y el desvío, separando lo que es gestión de lo que es inflación de la construcción.</p>
+          <h3>Dónde mirar primero</h3>
+          <p>Lumsto marca lo que se desvía de lo previsto, para que lo veas antes de que sea un problema.</p>
         </div>
         <div class="tarjeta">
-          <h3>Posesiones</h3>
-          <p>Qué unidades tienen fecha, cuáles están listas para entregar y cuáles ya se entregaron.</p>
+          <h3>Informes listos</h3>
+          <p>El resumen del mes armado con los mismos datos, para compartir sin rehacer cuentas.</p>
         </div>
       </div>
     </div>
@@ -135,12 +137,12 @@
   <section class="fondo-marfil">
     <div class="contenedor">
       <h2>Trabaja con lo que ya usás.</h2>
-      <p class="bajada">Lumsto no reemplaza tu sistema de ventas ni tu sistema contable: los lee.</p>
+      <p class="bajada">Lumsto no reemplaza tus sistemas ni tus planillas: los lee.</p>
       <ul class="lista">
         <li><strong>Se conecta a tus planillas y sistemas.</strong> Lee la información donde ya está, en modo solo lectura.</li>
         <li><strong>Tus datos quedan con vos.</strong> La información del negocio sigue en tus sistemas y en tu nube. Lumsto guarda lo mínimo para funcionar.</li>
-        <li><strong>Cada persona ve lo que le corresponde.</strong> Permisos por persona y por obra, e ingreso con verificación.</li>
-        <li><strong>En la computadora y en el celular.</strong> Para consultar un número en una reunión o en la obra.</li>
+        <li><strong>Cada persona ve lo que le corresponde.</strong> Permisos por persona, e ingreso con verificación.</li>
+        <li><strong>En la computadora y en el celular.</strong> Para consultar un número en una reunión o estés donde estés.</li>
       </ul>
     </div>
   </section>
@@ -149,7 +151,7 @@
     <div class="contenedor">
       <div class="acento"></div>
       <h2>Estamos armando la primera versión.</h2>
-      <p>La estamos construyendo junto a desarrolladoras que quieren dejar de perseguir números. Si querés verla o sumarte a la prueba, escribinos.</p>
+      <p>La estamos construyendo junto a empresas que quieren dejar de perseguir números. Si querés verla o sumarte a la prueba, escribinos.</p>
       <a class="boton" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">soporte@lumsto.com</a>
     </div>
   </section>
@@ -158,7 +160,7 @@
 <footer>
   <div class="contenedor">
     <span>© 2026 Lumsto</span>
-    <span><a href="https://login.lumsto.app">Login</a> · <a href="mailto:soporte@lumsto.com">soporte@lumsto.com</a></span>
+    <a href="mailto:soporte@lumsto.com">soporte@lumsto.com</a>
   </div>
 </footer>
 
