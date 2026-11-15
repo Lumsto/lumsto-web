@@ -48,8 +48,10 @@
   }
   .boton-borde { background: transparent; color: var(--blanco); border: 1px solid rgba(255,255,255,.4); padding: 8px 16px; }
   .boton-borde:hover { border-color: var(--blanco); }
-  .barra .boton-borde { display: none; }
-  @media (min-width: 560px) { .barra .boton-borde { display: inline-block; } }
+  .acciones { display: flex; align-items: center; gap: 16px; }
+  .enlace-contacto { display: none; color: var(--blanco); text-decoration: none; opacity: .85; }
+  .enlace-contacto:hover { opacity: 1; text-decoration: underline; }
+  @media (min-width: 560px) { .enlace-contacto { display: inline; } }
 
   .hero { padding: 48px 0 80px; max-width: 720px; }
   .acento { width: 48px; height: 4px; background: var(--ambar); border-radius: 2px; margin-bottom: 24px; }
@@ -90,7 +92,10 @@
   <div class="contenedor">
     <nav class="barra">
       <img src="marca/logo-inverso.svg" alt="Lumsto" width="180" height="68">
-      <a class="boton boton-borde" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Contacto</a>
+      <div class="acciones">
+        <a class="enlace-contacto" href="mailto:soporte@lumsto.com?subject=Quiero%20conocer%20Lumsto">Contacto</a>
+        <a class="boton boton-borde" href="https://login.lumsto.app">Login</a>
+      </div>
     </nav>
     <div class="hero">
       <div class="acento"></div>
@@ -153,7 +158,7 @@
 <footer>
   <div class="contenedor">
     <span>© 2026 Lumsto</span>
-    <a href="mailto:soporte@lumsto.com">soporte@lumsto.com</a>
+    <span><a href="https://login.lumsto.app">Login</a> · <a href="mailto:soporte@lumsto.com">soporte@lumsto.com</a></span>
   </div>
 </footer>
 
